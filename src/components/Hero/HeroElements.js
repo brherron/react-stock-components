@@ -11,7 +11,23 @@ export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
 
-  //Add :before styles.
+  :before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg, 
+        rgba(0,0,0,0) 75%, 
+        rgba(1,6,6,1) 100%), 
+      linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0.2) 20%, 
+        transparent 100%);
+    z-index: 2;
+  }
 `
 
 export const HeroBg = styled.div`
